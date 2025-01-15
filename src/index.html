@@ -15,11 +15,69 @@
   <body>
     <div class="container-fluid text-center">
       <h1 class="mt-5">Hello Rigo!</h1>
+
       <img src="./rigo-baby.jpg" />
+
       <p class="alert alert-warning mt-4">
         If this text is <b>not</b> centered and <b>yellow</b>, you probably have
         an error
       </p>
+
+      <form class="row my-5" id="myForm">
+        <div class="col-3">
+          <input
+            type="text"
+            class="form-control"
+            id="whoInput"
+            placeholder="Example: My Dog"
+          />
+          <label for="whoInput" class="form-label">Who to blame?</label>
+        </div>
+
+        <div class="col-3">
+          <input
+            type="text"
+            class="form-control"
+            id="actionInput"
+            placeholder="Example: eat"
+          />
+          <label for="actionInput" class="form-label">What they did?</label>
+        </div>
+
+        <div class="col-3">
+          <input
+            type="text"
+            class="form-control"
+            id="whatInput"
+            placeholder="Example: my homework"
+          />
+          <label for="whatInput" class="form-label"
+            >What do you want to avoid?</label
+          >
+        </div>
+
+        <div class="col-3">
+          <input
+            type="text"
+            class="form-control"
+            id="whenInput"
+            placeholder="Example: yesterday"
+          />
+          <label for="whenInput" class="form-label">When?</label>
+        </div>
+
+        <div class="col-12 my-5">
+          <button type="button" id="send" class="btn btn-primary mb-3 me-2">
+            Send the info
+          </button>
+          <button type="button" id="generate" class="btn btn-success mb-3 ms-2">
+            Generate excuse
+          </button>
+        </div>
+      </form>
+
+      <h1 id="excuse"></h1>
+
       <div class="fixed-bottom p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
